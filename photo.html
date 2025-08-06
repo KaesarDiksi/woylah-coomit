@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--FORMAT PHOTO-->
+    <a href="index.html">KEMBALI</a>
+    <p>pembuatan poto dalam html</p>
+    <hr>
+        <div class="rapip"></div>
+            <div class="poto">
+                <img src="file/gambar.png" alt="rapip" width="600pX" height="300">
+                <canvas id="canvas" width="600" height="300"></canvas>
+                <script>
+                    const canvas = document.getElementById('canvas');
+                    const ctx = canvas.getContext('2d');
+                    const img = new Image();
+                    img.src = 'file/gambar.png';
+                    img.onload = function() {
+                        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    };
+                </script>
+                <p>Ini adalah contoh pembuatan foto dalam HTML</p>
+                <p>Dengan menggunakan elemen <code>&lt;canvas&gt;</code>, kita dapat menggambar gambar secara dinamis menggunakan JavaScript.</p>
+            </div>
+    </div>
+            
+</body>
+</html>
+
